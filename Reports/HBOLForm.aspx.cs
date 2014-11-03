@@ -50,7 +50,6 @@ namespace JamaicaFreight.Reports
 
 		byte[] GetLabels()
 		{
-
 			string path = Server.MapPath("~/Reports/Forms/BillOfLading.pdf");
 
 			PdfReader pdfReader = null;
