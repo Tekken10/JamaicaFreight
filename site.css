@@ -1,0 +1,41 @@
+﻿body { font-family:Verdana; font-size:12px }
+table { margin:auto }
+div { margin:auto; display:block }
+
+.vtop { vertical-align:top }
+.at { vertical-align:top }
+.al { text-align:left }
+.ar { text-align:right }
+.ac { text-align:center }
+
+.tl { vertical-align:top; text-align:left }
+.tc { vertical-align:top; text-align:center }
+.tr { vertical-align:top; text-align:right }
+
+.ml { vertical-align:middle; text-align:left }
+.mc { vertical-align:middle; text-align:center }
+.mr { vertical-align:middle; text-align:right }
+
+.bl { vertical-align:bottom; text-align:left }
+.bc { vertical-align:bottom; text-align:center }
+.br { vertical-align:bottom; text-align:right }
+
+.nw { white-space:nowrap }
+.nowrap { white-space:nowrap }
+.b, .bold { font-weight:bold }
+img { border:none }
+
+.stdgrid { background-color:#fff }
+.stdgrid table { border:none; border-collapse:collapse; width:100% }
+.stdgrid td { border-bottom:1px solid #eee; border-left:1px solid #eee; padding:4px }
+.stdgrid tr.hilite:hover { background-color:#EAF3FF }
+.stdgrid th { border-left:1px solid #000; text-align:left; background-color:#000; color:#fff; height:23px; padding:0 4px 0 4px }
+.stdgrid td.lineno { border-left:none }
+.stdgrid .pager { font-size:13px; text-align:right; padding:5px 0 0 0 }
+.stdgrid .pager a { padding-right:10px }
+.stdgrid .pager .onpage { border:1px solid #000; background-color:#eee; text-decoration:none; font-weight:bold; padding:0 5px 0 5px }
+.stdgrid .pager .offpage { font-size:13px }
+.stdgrid .nodata { height:70px; text-align:center }
+.stdgrid .nodata:hover { background-color:#eee }
+
+.winlet { background-color:#fff; Width:420px; height:200px; border:2px solid #000 	}

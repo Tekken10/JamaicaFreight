@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{033F2257-F4B8-46DA-A1F4-5B6B41E55C07}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JamaicaFreight</RootNamespace>
+    <AssemblyName>JamaicaFreight</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\Download\AjaxControlToolkit.Binary.NET45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Tekken.Web">
+      <HintPath>..\DLLs\Tekken.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Countries.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\States.aspx" />
+    <Content Include="Admin\Units.aspx" />
+    <Content Include="Admin\Users.aspx" />
+    <Content Include="AutoComplete.asmx" />
+    <Content Include="BillingCodes.aspx" />
+    <Content Include="Carriers.aspx" />
+    <Content Include="Entities.aspx" />
+    <Content Include="Entity.aspx" />
+    <Content Include="EntityTypes.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HBOL.aspx" />
+    <Content Include="HBOLConsolidation.aspx" />
+    <Content Include="Images\9.gif" />
+    <Content Include="Images\Add-Task.png" />
+    <Content Include="Images\add16x16 8-bit.png" />
+    <Content Include="Images\addBoxBg.jpg" />
+    <Content Include="Images\Addpdf.png" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\arrow_down.jpg" />
+    <Content Include="Images\Assing.png" />
+    <Content Include="Images\backSelected.gif" />
+    <Content Include="Images\bg-menu-main-error.png" />
+    <Content Include="Images\bg-menu-main.png" />
+    <Content Include="Images\bg_grid_header.jpg" />
+    <Content Include="Images\bg_top_login.png" />
+    <Content Include="Images\blank.gif" />
+    <Content Include="Images\blueLineLeftToRigth.png" />
+    <Content Include="Images\blueLineRightToLeft.png" />
+    <Content Include="Images\blue_hover.gif" />
+    <Content Include="Images\blue_normal.jpg" />
+    <Content Include="Images\botleft.png" />
+    <Content Include="Images\botright.png" />
+    <Content Include="Images\btmBg.png" />
+    <Content Include="Images\btmlt.png" />
+    <Content Include="Images\btmrt.png" />
+    <Content Include="Images\btnadd.png" />
+    <Content Include="Images\btnAddBlue.gif" />
+    <Content Include="Images\btnAttachBlue.png" />
+    <Content Include="Images\btnCloseBlue.gif" />
+    <Content Include="Images\btnDetailsBlue.png" />
+    <Content Include="Images\btnGo.png" />
+    <Content Include="Images\btnHistory.png" />
+    <Content Include="Images\btnPrint.png" />
+    <Content Include="Images\btnPrintBlue.png" />
+    <Content Include="Images\btnSaveBlue.png" />
+    <Content Include="Images\btnSaveBlueOFF.png" />
+    <Content Include="Images\btnSaveCompleteBlue.png" />
+    <Content Include="Images\btnSavingBlue.png" />
+    <Content Include="Images\btnSearch.png" />
+    <Content Include="Images\btnSend-Request.png" />
+    <Content Include="Images\btnSendBlue.png" />
+    <Content Include="Images\btnSet.png" />
+    <Content Include="Images\calendar-icon.png" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Images\calendar.jpg" />
+    <Content Include="Images\calendar2.gif" />
+    <Content Include="Images\CalendarButton.gif" />
+    <Content Include="Images\Cancel_button.png" />
+    <Content Include="Images\checkmark128.png" />
+    <Content Include="Images\Checkmarkx16.png" />
+    <Content Include="Images\CheckUsedUnits.png" />
+    <Content Include="Images\close_box_redx20.png" />
+    <Content Include="Images\Close_btn.png" />
+    <Content Include="Images\collapse_blue.jpg" />
+    <Content Include="Images\collapse_blue.png" />
+    <Content Include="Images\Copyx32.png" />
+    <Content Include="Images\corner_tl_green.png" />
+    <Content Include="Images\corner_tl_red.png" />
+    <Content Include="Images\Cross.png" />
+    <Content Include="Images\DayNormalImg.png" />
+    <Content Include="Images\Daysel.png" />
+    <Content Include="Images\Deletex20.png" />
+    <Content Include="Images\deletex22.png" />
+    <Content Include="Images\Deletex24.png" />
+    <Content Include="Images\Deletex32.png" />
+    <Content Include="Images\Delete_button.png" />
+    <Content Include="Images\Dismiss.gif" />
+    <Content Include="Images\DismissDisable.gif" />
+    <Content Include="Images\downarrows_white.gif" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\Edit.png" />
+    <Content Include="Images\elilo-sprite.gif" />
+    <Content Include="Images\error.gif" />
+    <Content Include="Images\error50X50.png" />
+    <Content Include="Images\excel.png" />
+    <Content Include="Images\expand_blue.jpg" />
+    <Content Include="Images\expand_blue.png" />
+    <Content Include="Images\failed.png" />
+    <Content Include="Images\FedEx_01.gif" />
+    <Content Include="Images\filter.gif" />
+    <Content Include="Images\Finder.png" />
+    <Content Include="Images\gradient.png" />
+    <Content Include="Images\gridBg.png" />
+    <Content Include="Images\GridUpBlue.png" />
+    <Content Include="Images\Header.jpg" />
+    <Content Include="Images\heading-bg.jpg" />
+    <Content Include="Images\Help-icon.png" />
+    <Content Include="Images\icon-delete.gif" />
+    <Content Include="Images\icons\16x16\edit.png" />
+    <Content Include="Images\icons\16x16\edit2.png" />
+    <Content Include="Images\icons\16x16\read.png" />
+    <Content Include="Images\icons\16x16\record-delete.png" />
+    <Content Include="Images\icons\16x16\record-edit.png" />
+    <Content Include="Images\icons\32x32\edit-4.png" />
+    <Content Include="Images\icons\add.png" />
+    <Content Include="Images\icons\AddFolder.png" />
+    <Content Include="Images\icons\AddFolderOFF.png" />
+    <Content Include="Images\icons\addfoodallergy.png" />
+    <Content Include="Images\icons\addmedication.png" />
+    <Content Include="Images\icons\AddMembersIcon.png" />
+    <Content Include="Images\icons\AddReferral.png" />
+    <Content Include="Images\icons\AddUser.png" />
+    <Content Include="Images\icons\Advancedx16.png" />
+    <Content Include="Images\icons\allergy.png" />
+    <Content Include="Images\icons\Ambulance16.png" />
+    <Content Include="Images\icons\AmbulanceAdd16.png" />
+    <Content Include="Images\icons\arrow-left.png" />
+    <Content Include="Images\icons\arrow-right.png" />
+    <Content Include="Images\icons\ArrowDown.png" />
+    <Content Include="Images\icons\ArrowUp.png" />
+    <Content Include="Images\icons\Assessmentx16.png" />
+    <Content Include="Images\icons\bar-chart-icon.png" />
+    <Content Include="Images\icons\BeneficiaryShare.png" />
+    <Content Include="Images\icons\buildingsx16.png" />
+    <Content Include="Images\icons\Call14.png" />
+    <Content Include="Images\icons\Call2.png" />
+    <Content Include="Images\icons\Call30.png" />
+    <Content Include="Images\icons\Call7.png" />
+    <Content Include="Images\icons\callback.png" />
+    <Content Include="Images\icons\Cancel.png" />
+    <Content Include="Images\icons\CarePlan.png" />
+    <Content Include="Images\icons\CarePlanAdd.png" />
+    <Content Include="Images\icons\cases.png" />
+    <Content Include="Images\icons\chat.png" />
+    <Content Include="Images\icons\check.gif" />
+    <Content Include="Images\icons\check.png" />
+    <Content Include="Images\icons\Clients.png" />
+    <Content Include="Images\icons\Clinicalx16.png" />
+    <Content Include="Images\icons\Communication.png" />
+    <Content Include="Images\icons\CommunicationAdd.png" />
+    <Content Include="Images\icons\Config.png" />
+    <Content Include="Images\icons\Coordinate.png" />
+    <Content Include="Images\icons\Copy.png" />
+    <Content Include="Images\icons\CPEdit.png" />
+    <Content Include="Images\icons\ddPackage.png" />
+    <Content Include="Images\icons\Delete.gif" />
+    <Content Include="Images\icons\DeleteOFF.png" />
+    <Content Include="Images\icons\Deliveryx16.png" />
+    <Content Include="Images\icons\DiagnosisCode.png" />
+    <Content Include="Images\icons\dietitianactionassessment.png" />
+    <Content Include="Images\icons\Doctor16.png" />
+    <Content Include="Images\icons\DoctorsBag16.png" />
+    <Content Include="Images\icons\Document.png" />
+    <Content Include="Images\icons\DocumentAdd.png" />
+    <Content Include="Images\icons\documents.png" />
+    <Content Include="Images\icons\Edit.png" />
+    <Content Include="Images\icons\EditOFF.png" />
+    <Content Include="Images\icons\EKGChart16.png" />
+    <Content Include="Images\icons\emails.png" />
+    <Content Include="Images\icons\excel.png" />
+    <Content Include="Images\icons\follow-up-icon-big.png" />
+    <Content Include="Images\icons\follow-up-icon.png" />
+    <Content Include="Images\icons\FoodAllergy.png" />
+    <Content Include="Images\icons\ForwardArrow.png" />
+    <Content Include="Images\icons\GeneralInfo.png" />
+    <Content Include="Images\icons\Get10.png" />
+    <Content Include="Images\icons\Get20.png" />
+    <Content Include="Images\icons\Get5.png" />
+    <Content Include="Images\icons\Historical.png" />
+    <Content Include="Images\icons\history.png" />
+    <Content Include="Images\icons\Holdx16.png" />
+    <Content Include="Images\icons\Hospital16.png" />
+    <Content Include="Images\icons\hospitalx16.png" />
+    <Content Include="Images\icons\HRA.png" />
+    <Content Include="Images\icons\HRAAdd.png" />
+    <Content Include="Images\icons\Infox16.png" />
+    <Content Include="Images\icons\Inquiry.png" />
+    <Content Include="Images\icons\Instructions.png" />
+    <Content Include="Images\icons\insurance.png" />
+    <Content Include="Images\icons\Interactionx16.png" />
+    <Content Include="Images\icons\Lock.png" />
+    <Content Include="Images\icons\LockCP.png" />
+    <Content Include="Images\icons\Locked.png" />
+    <Content Include="Images\icons\Manual.png" />
+    <Content Include="Images\icons\Map.png" />
+    <Content Include="Images\icons\mealconfig.png" />
+    <Content Include="Images\icons\MedicalSymbol16.png" />
+    <Content Include="Images\icons\memberdocs.png" />
+    <Content Include="Images\icons\menu.png" />
+    <Content Include="Images\icons\Menux16.png" />
+    <Content Include="Images\icons\Nurse16.png" />
+    <Content Include="Images\icons\NurseIcon.png" />
+    <Content Include="Images\icons\Package.png" />
+    <Content Include="Images\icons\Packagex16.png" />
+    <Content Include="Images\icons\papers.png" />
+    <Content Include="Images\icons\PatientAddDisabled.png" />
+    <Content Include="Images\icons\PatientAddNormal.png" />
+    <Content Include="Images\icons\PatientDeleteDisabled.png" />
+    <Content Include="Images\icons\PatientDeleteNormal.png" />
+    <Content Include="Images\icons\PatientSecure16.png" />
+    <Content Include="Images\icons\PatientTransfer16.png" />
+    <Content Include="Images\icons\pdfAdd.jpg" />
+    <Content Include="Images\icons\PDOProvider.png" />
+    <Content Include="Images\icons\Phone.png" />
+    <Content Include="Images\icons\PhoneAdd.png" />
+    <Content Include="Images\icons\Pill16.png" />
+    <Content Include="Images\icons\poundsign.jpg" />
+    <Content Include="Images\icons\Profile.png" />
+    <Content Include="Images\icons\question_mark.png" />
+    <Content Include="Images\icons\Reassign.png" />
+    <Content Include="Images\icons\Referral.png" />
+    <Content Include="Images\icons\referrals.png" />
+    <Content Include="Images\icons\Referralx16.png" />
+    <Content Include="Images\icons\Refresh-icon.png" />
+    <Content Include="Images\icons\RemoveMemberIcon.png" />
+    <Content Include="Images\icons\runningx16.png" />
+    <Content Include="Images\icons\Save-icon.png" />
+    <Content Include="Images\icons\schedule.png" />
+    <Content Include="Images\icons\Schedulex16.png" />
+    <Content Include="Images\icons\scripts.png" />
+    <Content Include="Images\icons\Search.png" />
+    <Content Include="Images\icons\seriecode.png" />
+    <Content Include="Images\icons\ShieldIcon.png" />
+    <Content Include="Images\icons\SNPx16.png" />
+    <Content Include="Images\icons\SPDx16.png" />
+    <Content Include="Images\icons\SSIS_icon.gif" />
+    <Content Include="Images\icons\StopService.png" />
+    <Content Include="Images\icons\tasklist.png" />
+    <Content Include="Images\icons\tasks.png" />
+    <Content Include="Images\icons\TextEdit.png" />
+    <Content Include="Images\icons\toggle-collapse.png" />
+    <Content Include="Images\icons\toggle-expand.png" />
+    <Content Include="Images\icons\tracking.png" />
+    <Content Include="Images\icons\uncheck.gif" />
+    <Content Include="Images\icons\update.png" />
+    <Content Include="Images\icons\User.png" />
+    <Content Include="Images\icons\Vaccine.png" />
+    <Content Include="Images\icons\View.png" />
+    <Content Include="Images\icons\view_dietitian_assessment.png" />
+    <Content Include="Images\icons\VitalSigns.png" />
+    <Content Include="Images\icons\waiver.png" />
+    <Content Include="Images\icons\Write.png" />
+    <Content Include="Images\ILS-LOGO-sm.jpg" />
+    <Content Include="Images\Infox16.png" />
+    <Content Include="Images\Infox50.png" />
+    <Content Include="Images\Infox64.png" />
+    <Content Include="Images\info_off.png" />
+    <Content Include="Images\InitiateAuth.jpg" />
+    <Content Include="Images\InitiateAuth.png" />
+    <Content Include="Images\left.png" />
+    <Content Include="Images\leftpointer.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\login_off.png" />
+    <Content Include="Images\LOGO_S.gif" />
+    <Content Include="Images\ltbg.png" />
+    <Content Include="Images\MemActiveEpisode.png" />
+    <Content Include="Images\MemDismiss.png" />
+    <Content Include="Images\MemNoActiveEpisode.png" />
+    <Content Include="Images\menu_off.png" />
+    <Content Include="Images\Minus16x16 8-bit.png" />
+    <Content Include="Images\ModifyAuth.jpg" />
+    <Content Include="Images\ModifyAuth.png" />
+    <Content Include="Images\MonthNormalImage.png" />
+    <Content Include="Images\Monthsel.png" />
+    <Content Include="Images\next_button.png" />
+    <Content Include="Images\no.ico" />
+    <Content Include="Images\Ok.png" />
+    <Content Include="Images\orangeLineLeftToRigth.png" />
+    <Content Include="Images\overlay.png" />
+    <Content Include="Images\OverrideAuth.png" />
+    <Content Include="Images\PageBg.png" />
+    <Content Include="Images\page_white_add.png" />
+    <Content Include="Images\PhoneCall.png" />
+    <Content Include="Images\please_wait1.gif" />
+    <Content Include="Images\pointer.png" />
+    <Content Include="Images\previous_button.png" />
+    <Content Include="Images\redLineLeftToRigth.png" />
+    <Content Include="Images\red_back.jpg" />
+    <Content Include="Images\right.png" />
+    <Content Include="Images\row_on.png" />
+    <Content Include="Images\rtbg.png" />
+    <Content Include="Images\Save_button.png" />
+    <Content Include="Images\ScoreBackground.png" />
+    <Content Include="Images\ScoreTotalBackground.png" />
+    <Content Include="Images\Search_button.png" />
+    <Content Include="Images\search_off.png" />
+    <Content Include="Images\Select_button.png" />
+    <Content Include="Images\services-icon.png" />
+    <Content Include="Images\SNP-homepage - July 4.jpg" />
+    <Content Include="Images\SNP-homepage.jpg" />
+    <Content Include="Images\success.png" />
+    <Content Include="Images\Symbol-Error-Transp.png" />
+    <Content Include="Images\TerminateAuth.jpg" />
+    <Content Include="Images\TerminateAuth.png" />
+    <Content Include="Images\TerminateGetMemberBlue.gif" />
+    <Content Include="Images\TerminateGetMemberDisabled.gif" />
+    <Content Include="Images\toobig.gif" />
+    <Content Include="Images\topbg.png" />
+    <Content Include="Images\toplt.png" />
+    <Content Include="Images\toprt.png" />
+    <Content Include="Images\tracking.png" />
+    <Content Include="Images\Un-Assing.png" />
+    <Content Include="Images\under_construction_png.png" />
+    <Content Include="Images\unlock.png" />
+    <Content Include="Images\uparrows_white.gif" />
+    <Content Include="Images\uploadlimit.gif" />
+    <Content Include="Images\uppointer.png" />
+    <Content Include="Images\VLC_Auth.png" />
+    <Content Include="Images\warningx16.png" />
+    <Content Include="Images\warningx50.gif" />
+    <Content Include="Images\warningx50.png" />
+    <Content Include="Images\warningx64.png" />
+    <Content Include="Images\WebPanelError.png" />
+    <Content Include="Images\WebPanelNormal.png" />
+    <Content Include="Images\WebPanelOver.png" />
+    <Content Include="Images\WeekNormalImage.png" />
+    <Content Include="Images\WeekSel.png" />
+    <Content Include="Images\XPButtonNoText_160x22.png" />
+    <Content Include="Images\yes.ico" />
+    <Content Include="Images\zerobyte.gif" />
+    <Content Include="Images\Thumbs.db" />
+    <Content Include="Images\icons\Thumbs.db" />
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="JF.Master" />
+    <Content Include="JF_DataSet.xsc">
+      <DependentUpon>JF_DataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="JF_DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JF_DataSet.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="JF_DataSet.xss">
+      <DependentUpon>JF_DataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Forms\HBLLabel.pdf" />
+    <Content Include="Reports\Forms\BillOfLading.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Labels.aspx" />
+    <Content Include="MBL.aspx" />
+    <Content Include="Reports\CustomersReport.aspx" />
+    <Content Include="Reports\Default.aspx" />
+    <Content Include="Reports\HBLsReport.aspx" />
+    <Content Include="Reports\HBOLForm.aspx" />
+    <Content Include="Reports\Labels.aspx" />
+    <Content Include="Scripts\ILSGrid.js" />
+    <Content Include="Scripts\Tools.js" />
+    <Content Include="UserControls\AutoClose.ascx" />
+    <Content Include="UserControls\Legend.ascx" />
+    <Content Include="UserControls\NoData.ascx" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Ports.aspx" />
+    <Content Include="site.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Countries.aspx.cs">
+      <DependentUpon>Countries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Countries.aspx.designer.cs">
+      <DependentUpon>Countries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\States.aspx.cs">
+      <DependentUpon>States.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\States.aspx.designer.cs">
+      <DependentUpon>States.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Units.aspx.cs">
+      <DependentUpon>Units.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Units.aspx.designer.cs">
+      <DependentUpon>Units.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="AutoComplete.asmx.cs">
+      <DependentUpon>AutoComplete.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BillingCodes.aspx.cs">
+      <DependentUpon>BillingCodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BillingCodes.aspx.designer.cs">
+      <DependentUpon>BillingCodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers.aspx.cs">
+      <DependentUpon>Carriers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers.aspx.designer.cs">
+      <DependentUpon>Carriers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities.aspx.cs">
+      <DependentUpon>Entities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entities.aspx.designer.cs">
+      <DependentUpon>Entities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity.aspx.cs">
+      <DependentUpon>Entity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entity.aspx.designer.cs">
+      <DependentUpon>Entity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntityTypes.aspx.cs">
+      <DependentUpon>EntityTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntityTypes.aspx.designer.cs">
+      <DependentUpon>EntityTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HBOL.aspx.cs">
+      <DependentUpon>HBOL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HBOL.aspx.designer.cs">
+      <DependentUpon>HBOL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HBOLConsolidation.aspx.cs">
+      <DependentUpon>HBOLConsolidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HBOLConsolidation.aspx.designer.cs">
+      <DependentUpon>HBOLConsolidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JF.Master.cs">
+      <DependentUpon>JF.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JF.Master.designer.cs">
+      <DependentUpon>JF.Master</DependentUpon>
+    </Compile>
+    <Compile Include="JF_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JF_DataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Labels.aspx.cs">
+      <DependentUpon>Labels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Labels.aspx.designer.cs">
+      <DependentUpon>Labels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBL.aspx.cs">
+      <DependentUpon>MBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MBL.aspx.designer.cs">
+      <DependentUpon>MBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PortGrid.cs" />
+    <Compile Include="Ports.aspx.cs">
+      <DependentUpon>Ports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ports.aspx.designer.cs">
+      <DependentUpon>Ports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CustomersReport.aspx.cs">
+      <DependentUpon>CustomersReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CustomersReport.aspx.designer.cs">
+      <DependentUpon>CustomersReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\HBLsReport.aspx.cs">
+      <DependentUpon>HBLsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\HBLsReport.aspx.designer.cs">
+      <DependentUpon>HBLsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\HBOLForm.aspx.cs">
+      <DependentUpon>HBOLForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\HBOLForm.aspx.designer.cs">
+      <DependentUpon>HBOLForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Labels.aspx.cs">
+      <DependentUpon>Labels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Labels.aspx.designer.cs">
+      <DependentUpon>Labels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AutoClose.ascx.cs">
+      <DependentUpon>AutoClose.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Legend.ascx.cs">
+      <DependentUpon>Legend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NoData.ascx.cs">
+      <DependentUpon>NoData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JF.Controls\JF.Controls.csproj">
+      <Project>{64eb890e-0d7c-4eb0-98c7-e0d52d238fcf}</Project>
+      <Name>JF.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JF.Data\JF.Data.csproj">
+      <Project>{c7d87f28-d3a6-44a0-8d8e-e47b77de501f}</Project>
+      <Name>JF.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JF.Model\JF.Model.csproj">
+      <Project>{38dcba82-807a-4a80-bc22-3e2e83487519}</Project>
+      <Name>JF.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="App_WebReferences\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\BillOfLading.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CustomersList.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report1.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49674</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49674/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

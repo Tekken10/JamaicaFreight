@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+  			<siteMapNode url="~/entities.aspx" title="Shippers" description="" />
+ 				<siteMapNode url="~/HBOLConsolidation.aspx" title="House Bill of Lading" description="" />
+        <siteMapNode url="~/MBL.aspx" title="Master Bill of Lading" description="" />
+				<siteMapNode url="~/reports/default.aspx" title="Reports" description="" />	
+				<siteMapNode url="~/manifest.aspx" title="Manifest" description="" />
+        <siteMapNode url="~/Labels.aspx" title="Labels" description="" />
+        <siteMapNode url="~/admin/default.aspx" title="Administration" description="" />
+    </siteMapNode>
+</siteMap>

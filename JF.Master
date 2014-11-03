@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JF.master.cs" Inherits="JamaicaFreight.JFMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Jamaica Freight</title>
+	<link href="site.css" type="text/css" rel="Stylesheet" />
+	<style type="text/css">
+	.nav { border:none; background-color:#002663; display:inline-block; width:100%;  }
+	.nav div { border:none; width:100%; height:32px; float:left; display:inline-block; text-align:center }
+	.nav a { font-family:arial; color:#fff; text-decoration:none; display:block; padding:7px 0 8px 0; vertical-align:middle; width:100% }
+	.nav .on { background-color:#006890 }
+	.nav .off { }
+	.nav .on a { color:#fff }
+	.nav .on .outer, .off .outer { background-image:url(http://www.aeronica.com/images/div.gif); background-repeat:no-repeat }
+	div:hover.off { background-image:none;background-color:#7f99b2 }
+	.partners { font-size:10px;color:#999;margin-left:10px }
+	.partners a { font-size:10px;color:#999;text-decoration:none }
+	.co { color:#002663; font-size:16px; font-weight:bold; text-align:center }
+	.sec { color:#002663; font-size:16px; font-weight:bold  }
+	</style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+		<table style="width:100%">
+			<tr>
+				<td style="width:76px"><asp:Image ImageUrl="~/Images/menu_off.png" AlternateText="" runat="server" /></td>
+				<td style="width:35px"><asp:Image ImageUrl="~/Images/search_off.png" AlternateText="" runat="server" /></td>
+				<td class="co">JAMAICA FREIGHT</td>
+				<td style="width:34px"><asp:Image ImageUrl="~/Images/info_off.png" AlternateText="" runat="server" /></td>
+				<td style="width:63px"><asp:ImageButton ID="btnLogout" ImageUrl="~/Images/login_off.png" runat="server" /></td>
+			</tr>
+		</table>
+		<div class="nav">
+			<asp:Literal ID="navStrip" runat="server" />
+		</div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
